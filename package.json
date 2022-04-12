@@ -2,20 +2,25 @@
   "name": "wildergql",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.ts",
+    "dev": "ts-node-dev server.ts",
+    "devmon": "nodemon server.ts",
+    "build": "tsc"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "express-graphql": "^0.12.0",
+    "apollo-server": "^3.6.7",
+    "dotenv": "^16.0.0",
     "graphql": "^16.3.0",
-    "mongoose": "^6.2.10"
+    "mongoose": "^6.2.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
   }
 }
